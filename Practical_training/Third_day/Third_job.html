@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>文字属性设置</title>
+  <style type="text/CSS">
+  h1{
+    color: red;
+    text-align: center;
+    font-family: "微软雅黑";
+    text-shadow: 5px 5px 5px #ccc;
+  }
+  .enletter{letter-spacing: 30px;}
+  .enword{word-spacing: 20px;}
+  p{text-indent: 2em;line-height: 160%;}
+  .p1{text-decoration: underline;}
+  .p2{text-transform: lowercase;}
+  .p3{
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  </style>
+</head>
+<body>
+  <h1><span class="enletter">CSS</span>简介</h1>
+  <p class="p1">CSS(<span class="enword">Cascading Style Sheets</span>)即层叠样式表在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。</p>
+  <p class="p2">CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。</p>
+  <p class="p3">这些模块包括： 盒子模型、列表模块、超链接方式 、语言模块 、背景和边框 、文字特效、多栏布局等。</p>
+</body>
+</html>
