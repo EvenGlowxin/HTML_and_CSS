@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .p1 {
+        text-align: left;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .p1 p {
+        text-indent: 2em;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .p2 {
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<h1>CSS 文字、文本样式效果的继承性</h1>
+</head>
+<body>
+<div class="p1">
+        <p>
+            CSS 文字、文本样式效果具有继承性，如果某一标签设置了文字颜色为蓝色，那么它的所有后代标签都会具有该属性，
+            <span class="p2">除非后代标签自带同种的文字属性</span>，或通过 CSS 设置新的属性将其覆盖。
+            非文字、文本类型的样式效果不具备继承特性。
+        </p >
+    </div>
+</body>
+</html>
