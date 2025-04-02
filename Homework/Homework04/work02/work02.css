@@ -1,0 +1,32 @@
+body,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+dl {
+  width: 200px;
+  height: 270px;
+  border: 10px solid #f1e9ef;
+  padding: 10px;
+  margin-left: 10px;
+}
+dt {
+  width: 200px;
+  height: 162px;
+  background: url(../../images/images/img.png);
+  margin-bottom: 5px;
+}
+dd {
+  width: 200px;
+  height: 26px;
+  line-height: 26px;
+  color: #999;
+  padding-left: 20px;
+}
+.poo1 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.poo2 {
+  font-size: 12px;
+}

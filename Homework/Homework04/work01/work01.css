@@ -1,0 +1,24 @@
+body {
+  font-weight: 16px;
+  font-family: "微软雅黑";
+  color: #222;
+}
+body,ul,li {padding: 0;margin: 0;list-style: none;}
+ul {
+  width: 170px;
+  height: 489px;
+  background: url(../../images/images/bg.jpg) no-repeat;
+  padding-top: 199px;
+  color: #fff;
+}
+li {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px dotted #fff;
+  margin-left: 45px;
+}
+.one {
+  border-bottom: none;
+}
