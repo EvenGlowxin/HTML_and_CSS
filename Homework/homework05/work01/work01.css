@@ -5,5 +5,5 @@ ul {
   color: #333;
 }
 .one {
-  list-style: outside url(../images/images/1.png);
+  list-style: outside url(../../images/images/1.png);
 }
