@@ -1,0 +1,16 @@
+body {
+  background-color: #b0acac;
+}
+.news h1 {
+  font-family: "黑体";
+  font-size: 30px;
+}
+.news p {
+  font-family: "宋体";
+  font-size: 18px;
+}
+span {
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+}
