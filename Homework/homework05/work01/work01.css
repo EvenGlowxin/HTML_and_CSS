@@ -1,0 +1,9 @@
+ul {
+  list-style-type: circle;
+  padding-left: 30px;
+  line-height: 1.6;
+  color: #333;
+}
+.one {
+  list-style: outside url(../images/images/1.png);
+}
