@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>客户留言</title>
+  <style>
+    form {
+      width: 500px;
+      margin: auto;
+    }
+    label {
+      display: inline-block;
+      width: 80px;
+      text-align: center;
+    }
+    main {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .up {
+      background-color: orange;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .ag {
+      background-color: cyan;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    fieldset {
+      border-color: aqua;
+    }
+    .cq {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>尊敬的客户：</p>
+    <p>如果您需要了解我们的产品和得到我们的服务，敬请留下宝贵的意见和建议，我们将给予您最快的答复。谢谢您的支持与参与！</p>
+    <p>售后服务邮箱：yhfwk@huaantong.com</p>
+  <form action="saveInfo.jsp" method="post" name="userInfo">
+    <fieldset>
+      <legend class="cq">客户留言</legend>
+      <p>
+        <label>您的名字:</label>
+        <input type="text" name="name" maxlength="20"><br>
+      </p>
+      <p>
+        <label>您的性别：</label>
+        <input type="radio" name="gender" value="man" checked>男
+        <input type="radio" name="gender" value="woman">女
+      </p>
+      <p>
+        <label>客户类型:</label>
+        <select>
+          <option value="select" selected>请选择</option>
+          <option value="agency">代理</option>
+          <option value="user">用户</option>
+          <option value="company">公司</option>
+          <option value="else">其他</option>
+        </select>
+      </p>
+      <p>
+        <label>联系电话:</label>
+        <input type="text" name="phone" maxlength="11">
+      </p>
+      <p>
+        <label>电子邮件:</label>
+        <input type="text" name="E-mail" maxlength="20">
+      </p>
+      <p>
+        <label>设计调查</label>
+        <input type="radio" name="gender">室内设计
+        <input type="radio" name="gender">景观设计
+        <input type="radio" name="gender">家居定制
+        <input type="radio" name="gender">其他（请选择你近期想要沟通的项目）
+      </p>
+      <p>
+        <label>留言标题:</label>
+        <input type="text" name="liuyanbiaoti">
+      </p>
+      <p>
+        <label>留言内容:</label>
+        <textarea name="intro" cols="30" rows="10"></textarea>
+      </p>
+        <label>附&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件:</label>
+        <input type="file" name="cv">
+      </p>
+      <p>
+        <input type="submit" value="提交" class="up">
+        <input type="reset" value="重置" class="ag">
+      </p>
+    </fieldset>
+  </form>
+  </main>
+</body>
+</html>

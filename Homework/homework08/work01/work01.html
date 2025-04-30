@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单</title>
+  <style>
+    .title {
+      width: 500px;
+      text-align: center;
+    }
+    label {
+      display: inline-block;
+      width: 80px;
+      text-align: center;
+    }
+    .userForm {
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">用户信息注册</h1>
+  <form action="saveInfo.jsp" method="post" name="userInfo" class="userForm">
+    <fieldset>
+      <legend>创建个人账户</legend>
+      <p>
+        <label>用户名</label>
+        <input type="text" name="name" maxlength="20"><br>
+      </p>
+      <p>
+        <label>密码：</label>
+        <input type="password" name="pwd"><br>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>个人信息</legend>
+      <p>
+        <label>性别：</label>
+        <input type="radio" name="gender" value="man" checked>男
+        <input type="radio" name="gender" value="woman">女
+      </p>
+      <p>
+        <label>城市：</label>
+        <select name="city">
+          <option value="BeiJing">北京</option>
+          <option value="ShangHai">上海</option>
+          <option value="ShenZhen">深圳</option>
+          <option value="NanChang">南昌</option>
+        </select>
+      </p>
+      <p>
+        <label>兴趣</label>
+        <input type="checkbox" name="interest" value="tech" checked>科技
+        <input type="checkbox" name="interest" value="food" checked>美食
+        <input type="checkbox" name="interest" value="fashion" checked>时尚
+        <input type="checkbox" name="interest" value="travel" checked>旅游
+        <input type="checkbox" name="interest" value="fitness" checked>健身
+      </p>
+      <p>
+        <label>个人简介：</label>
+        <textarea name="intro" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <label>个人简历：</label>
+        <input type="file" name="cv">
+      </p>
+    </fieldset>
+    <p>
+      <input type="submit" value="提交信息" class="funcBtn">
+      <input type="reset" value="重置数据" class="funcBtn">
+    </p>
+  </form>
+</body>
+</html>
