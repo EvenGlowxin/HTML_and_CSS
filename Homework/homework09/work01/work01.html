@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册</title>
+  <style>
+    .ti {
+      width: 500px;
+      text-align: center;
+      background-color: #baeec1;
+      color: white;
+    }
+    fieldset {
+      background-color: #ebebeb;
+      border: none;
+      margin-bottom: 5px;
+    }
+    h3 {
+      background-color: #7dad84;
+      box-shadow: 2px 2px 2px #ccc;
+      color: #fff;
+      font-size: large;
+      padding: 5px;
+    }
+    .in {
+      background-color: white;
+      border: 1px solid #ebebeb;
+    }
+    label {
+      display: inline-block;
+      width: 80px;
+      text-align: right;
+    }
+    .userForm {
+      width: 500px;
+    }
+    .ci {
+      width: 80px;
+    }
+    .bt {
+      text-align: center;
+    }
+    .fu {
+      background-color: #7dad84;
+      margin: 10px;
+      padding: 5px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="ti">用户信息注册</h1>
+  <form action="saveInfo.jsp" method="post" name="userInfo" class="userForm">
+    <fieldset>
+      <h3>创建个人账户</h3>
+      <div>
+        <p>
+          <label>用户名：</label>
+          <input type="text" name ="name" maxlength="20" required autocapitalize="on" autofocus placeholder="请输入姓名">
+        </p>
+        <p>
+          <label>密码：</label>
+          <input type="password" name="pwd" required pattern="^[a - zA - Z] \w {5,17} $">
+        </p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <h3>个人信息</h3>
+      <div class="in">
+        <p>
+          <label>性别：</label>
+          <input type="radio" name="gender" value="man" checked>男
+          <input type="radio" name="gender" value="woman">女
+        </p>
+        <p>
+          <label>年龄：</label>
+          <input type="number" name="age" min="1" max="100">
+        </p>
+        <p>
+          <label>手机号码：</label>
+          <input type="tel" pattern="^\d{11}$">
+        </p>
+        <p>
+          <label>个人博客：</label>
+          <input type="url" name="userURL">
+        </p>
+        <p>
+          <label>城市：</label>
+          <select name="city" class="ci">
+            <option value="BeiJing">北京</option>
+            <option value="ShangHai">上海</option>
+            <option value="ShenZhen">深圳</option>
+            <option value="NanChang">南昌</option>
+          </select>
+        </p>
+        <p>
+          <label>兴趣：</label>
+          <input type="checkbox" name="interest" value="tech" checked>科技
+          <input type="checkbox" name="interest" value="food" checked>美食
+          <input type="checkbox" name="interest" value="travel" checked>旅游
+          <input type="checkbox" name="interest" value="fitness" checked>健身
+        </p>
+        <p>
+          <label>个人简介：</label>
+          <textarea name="intro" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <label>个人简介：</label>
+          <input type="file" name="cv">
+          <br>
+        </p>
+      </div>
+    </fieldset>
+    <div class="bt">
+      <input type="submit" value="提交信息" class="fu">
+      <input type="reset" value="重置数据" class="fu">
+    </div>
+  </form>
+</body>
+</html>

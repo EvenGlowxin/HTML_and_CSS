@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .colorful-nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #f9f9f9, #fff);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .nav-item {
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .nav-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .nav-item:nth-child(1) {
+            background-color: red;
+            color: white;
+        }
+        
+        .nav-item:nth-child(2) {
+            background-color: blue;
+            color: white;
+        }
+        
+        .nav-item:nth-child(3) {
+            background-color: #45B7D1;
+            color: white;
+        }
+        
+        .nav-item:nth-child(4) {
+            background-color: orange;
+            color: white;
+        }
+        
+        .news-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .news-title {
+            color: #E74C3C;
+            border-bottom: 2px solid #F1C40F;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .ge {
+            color: red;
+        }
+        
+        .news-item {
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .page-info {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            
+            .colorful-nav {
+                flex-direction: column;
+            }
+            
+            .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>五彩导航</h2>
+        <div class="colorful-nav">
+            <div class="nav-item">首页</div>
+            <div class="nav-item">商品分类</div>
+            <div class="nav-item">促销活动</div>
+            <div class="nav-item">会员中心</div>
+        </div>
+        
+        <div class="news-box">
+            <h3 class="news-title">品优购快报</h3>
+            <div class="news-item">
+                <span class="ge">特惠</span>
+                <span>爆款耳机5折秒！</span>
+            </div>
+            <div class="news-item">
+                <span class="ge">特惠</span>
+                <span>母亲节，健康好礼低至5折！</span>
+            </div>
+            <div class="news-item">
+                <span class="ge">特惠</span>
+                <span>9.9元洗100张照片！</span>
+            </div>
+            <div class="news-item">
+                <span class="ge">特惠</span>
+                <span>长虹智能空调立省1000</span>
+            </div>
+        </div>
+</body>
+</html>
